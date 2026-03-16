@@ -1,26 +1,53 @@
-body{
-font-family: Arial;
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif;
 background:#dce3da;
+color:#333;
 }
 
 /* HEADER */
 
 header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 40px;
+padding:15px 50px;
 background:#e5ebe2;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+z-index:1000;
+}
+
+.logo{
+font-weight:bold;
+font-size:18px;
 }
 
 nav a{
-margin-left:20px;
+margin-left:25px;
 text-decoration:none;
-color:black;
+color:#333;
+font-weight:500;
+transition:0.2s;
+}
+
+nav a:hover{
+color:#2f7a45;
 }
 
 /* HERO */
+
+.hero{
+margin-top:70px;
+}
 
 .hero img{
 width:100%;
@@ -28,26 +55,43 @@ height:450px;
 object-fit:cover;
 }
 
-/* COLETA */
+/* SEÇÕES */
 
-.coleta{
-text-align:center;
-padding:60px 20px;
+section{
+padding:70px 20px;
 }
+
+h2{
+text-align:center;
+margin-bottom:40px;
+font-size:26px;
+}
+
+/* COLETA */
 
 .cards{
 display:flex;
 justify-content:center;
 gap:40px;
-margin-top:40px;
+flex-wrap:wrap;
 }
 
 .card{
 background:white;
 padding:25px;
-width:260px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+width:280px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.25s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 12px 25px rgba(0,0,0,0.12);
+}
+
+.card h4{
+margin-bottom:10px;
 }
 
 .buttons{
@@ -55,70 +99,101 @@ margin-top:20px;
 }
 
 .buttons a{
+display:inline-block;
 margin:5px;
-padding:6px 12px;
-background:#eee;
+padding:7px 14px;
+background:#f1f1f1;
 border-radius:20px;
 text-decoration:none;
-color:black;
+color:#333;
+font-size:14px;
+transition:0.2s;
+}
+
+.buttons a:hover{
+background:#2f7a45;
+color:white;
 }
 
 /* INFORMAÇÕES */
 
 .informacoes{
-padding:60px;
-text-align:center;
+background:#e8eee6;
 }
 
 .info-box{
+max-width:900px;
+margin:auto;
 display:flex;
 gap:30px;
-justify-content:center;
 align-items:center;
-margin-top:40px;
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
 }
 
 .info-box img{
 width:300px;
 border-radius:10px;
+object-fit:cover;
+}
+
+.info-box p{
+line-height:1.6;
 }
 
 /* DENUNCIA */
 
 .denuncia{
-padding:60px;
 text-align:center;
 }
 
 form{
 background:white;
 padding:30px;
-width:350px;
+width:380px;
 margin:auto;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
 
 input, textarea{
 width:100%;
 padding:10px;
-margin-top:10px;
+margin-top:12px;
 border:1px solid #ccc;
-border-radius:5px;
+border-radius:6px;
+font-size:14px;
+}
+
+textarea{
+resize:none;
+height:100px;
 }
 
 button{
 margin-top:15px;
 width:100%;
-padding:10px;
+padding:12px;
 background:#333;
 color:white;
 border:none;
-border-radius:5px;
+border-radius:6px;
 cursor:pointer;
+font-size:15px;
+transition:0.2s;
 }
+
+button:hover{
+background:#2f7a45;
+}
+
+/* FOOTER */
 
 footer{
 text-align:center;
-padding:20px;
+padding:25px;
+background:#e5ebe2;
+margin-top:40px;
 }
