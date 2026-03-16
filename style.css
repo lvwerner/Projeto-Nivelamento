@@ -1,0 +1,124 @@
+body{
+font-family: Arial;
+margin:0;
+background:#dce3da;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#e5ebe2;
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:black;
+}
+
+/* HERO */
+
+.hero img{
+width:100%;
+height:450px;
+object-fit:cover;
+}
+
+/* COLETA */
+
+.coleta{
+text-align:center;
+padding:60px 20px;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:25px;
+width:260px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.buttons{
+margin-top:20px;
+}
+
+.buttons a{
+margin:5px;
+padding:6px 12px;
+background:#eee;
+border-radius:20px;
+text-decoration:none;
+color:black;
+}
+
+/* INFORMAÇÕES */
+
+.informacoes{
+padding:60px;
+text-align:center;
+}
+
+.info-box{
+display:flex;
+gap:30px;
+justify-content:center;
+align-items:center;
+margin-top:40px;
+}
+
+.info-box img{
+width:300px;
+border-radius:10px;
+}
+
+/* DENUNCIA */
+
+.denuncia{
+padding:60px;
+text-align:center;
+}
+
+form{
+background:white;
+padding:30px;
+width:350px;
+margin:auto;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+input, textarea{
+width:100%;
+padding:10px;
+margin-top:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+margin-top:15px;
+width:100%;
+padding:10px;
+background:#333;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+footer{
+text-align:center;
+padding:20px;
+}
