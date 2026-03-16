@@ -16,6 +16,7 @@
         <a href="#coleta">Pontos de coleta</a>
         <a href="#info">Informações</a>
         <a href="#denuncia">Denúncias</a>
+		<button id="abrirColeta" class="btn-coleta">Solicitar Coleta</button>
     </nav>
 </header>
 
@@ -91,7 +92,6 @@ organizações responsáveis para fazer o descarte correto.
 
 </section>
 
-
 <section id="denuncia" class="denuncia">
 
 <h2>Denúncias</h2>
@@ -111,14 +111,51 @@ organizações responsáveis para fazer o descarte correto.
 </form>
 
 </section>
+<div id="modalColeta" class="modal">
+
+<div class="modal-content">
+
+<span class="fechar">&times;</span>
+
+<h2>Solicitar Coleta de Móveis</h2>
+
+<form id="formColeta">
+
+<input type="text" placeholder="Nome" required>
+
+<input type="text" placeholder="Endereço" required>
+
+<input type="text" placeholder="Bairro" required>
+
+<input type="text" placeholder="Telefone">
+
+<select required>
+<option value="">Tipo de móvel</option>
+<option>Sofá</option>
+<option>Colchão</option>
+<option>Armário</option>
+<option>Mesa</option>
+<option>Outro</option>
+</select>
+<input type="file" id="fotoMovel" accept="image/*">
+
+<textarea placeholder="Descreva o móvel ou quantidade"></textarea>
+
+<button type="submit">Enviar Solicitação</button>
+
+</form>
+
+</div>
+
+</div>
 
 
 <footer>
 <p>Projeto Fábrica de Software</p>
 </footer>
 
-
 <script src="script.js"></script>
+
 
 </body>
 </html>
