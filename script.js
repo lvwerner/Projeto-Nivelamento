@@ -10,15 +10,20 @@ const modal = document.getElementById("modalColeta")
 const abrir = document.getElementById("abrirColeta")
 const fechar = document.querySelector(".fechar")
 
-abrir.onclick = () => modal.style.display = "block"
+abrir.addEventListener("click", function(){
+    modal.style.display = "flex"
+})
 
-fechar.onclick = () => modal.style.display = "none"
+fechar.addEventListener("click", function(){
+    modal.style.display = "none"
+})
 
-window.onclick = (e)=>{
-if(e.target == modal){
-modal.style.display = "none"
-}
-}
+window.addEventListener("click", function(e){
+    if(e.target === modal){
+        modal.style.display = "none"
+    }
+})
+
 document.getElementById("formColeta")
 .addEventListener("submit", function(e){
 
@@ -46,6 +51,7 @@ modal.style.display="none"
 this.reset()
 
 })
+
 document.getElementById("formColeta")
 .addEventListener("submit", function(e){
 
