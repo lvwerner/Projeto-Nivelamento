@@ -26,9 +26,9 @@ O sistema pode ser acessado diretamente pelo navegador, sem necessidade de insta
 
 Exemplo da interface do sistema:
 
-![preview](https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9)
+<img width="1060" height="1093" alt="{99CE6F95-8729-4A6B-9725-FC581C46D2A5}" src="https://github.com/user-attachments/assets/2f1e504c-4d73-464d-ac20-cc33cba6b358" />
 
-*(Você pode substituir depois por um print real do seu site.)*
+
 
 ---
 
@@ -223,4 +223,4 @@ Projeto desenvolvido para a disciplina:
 
 **Fábrica de Software**
 
-Curso de **Sistemas de Informação / Engenharia de Software**
+Curso de **Engenharia de Software**
